@@ -5,28 +5,38 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header>
-      <div class="page-header">
+    <header class="page-header">
+      <nav class="navigation" >
         <a class="page-logo" href="index.html">
-          <img height="70" width="140" alt="Sedona">
+          <img src="#" class="page-header-logo" alt="Sedona">
         </a>
-        <nav class="main-menu" >
-          <ul class="main-menu-list">
-            <li class="main-menu-list-item">
-              <a class="main-menu-list-item-link" href="#">Главная</a>
-            </li>
-            <li class="main-menu-list-item">
-              <a class="main-menu-list-item-link" href="#">О Седоне</a>
-            </li>
-            <li class="main-menu-list-item">
-              <a class="main-menu-list-item-link" href="#">Гостиницы</a>
-            </li>
-          </ul>
-        </nav>
-        <svg class="search-icon" href="#" width="18px" height="18px"></svg>
-        <svg class="favorite-icon" href="#" width="18px" height="17px"></svg>
-        <button class="button" type="submit">ХОЧУ СЮДА!</button>
-      </div>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li>
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">О Седоне</span>
+            </a>
+          </li>
+          <li>
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li>
+             <button class="button" type="submit">ХОЧУ СЮДА!</button>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <h1 class="visually-hidden">Sedona</h1>
