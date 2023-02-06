@@ -34,4 +34,151 @@
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .page-header {
+    background-color: #ffffff;
+    color: #000000
+  }
+
+  .navigation-link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .navigation-link-button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #756157;
+    text-transform: uppercase;
+  }
+
+  .hero {
+    background-image: url(../images/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  .advantages h2 {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .advantages p {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .advantage-header {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  .advantage-item:first-child {
+    background-color: #82B3D3;
+    color: #ffffff;
+  }
+
+  .advantage-item:nth-child(2n+2) {
+    background: rgba(131, 179, 211, 0.12);
+  }
+
+  .advantage-item:nth-child(3) {
+    background: rgba(131, 179, 211, 0.2);
+  }
+
+  .advantage-item:last-child {
+    background-color: #82B3D3;
+    color: #ffffff;
+  }
+
+  .advices h2 {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .advices p {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .advices-item:nth-child(odd) {
+    background: rgba(131, 179, 211, 0.12);
+  }
+
+  .advices-item:nth-child(2) {
+    background: #FFFFFF;
+  }
+
+  .have-an-interest h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .have-an-interest p {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .have-an-interest .button {
+    background-color: #756157;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .mailing {
+    background-image: url(../images/subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  .mailing h2 {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .mailing p {
+    font-size: 22px;
+    line-height: 2px;
+  }
+
+  .subscribe-button {
+    font-size: 20px;
+    line-height: 36px;
+    color:#ffffff;
+    background-color: #82B3D3;
+    text-transform: uppercase;
+  }
+
+  .footer-social-item .button {
+    text-decoration: none;
+  }
+
+  .footer-contact-phone {
+    font-size: 40px;
+    line-height: 40px;
+    color:#000000;
+    text-decoration: none;
+  }
+
+  .visually-hidden {
+    opacity: 0;
   }
