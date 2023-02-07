@@ -73,13 +73,13 @@
     background-color: #000000;
   }
 
-  .advantages h2 {
+  .advantages-heading {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
   }
 
-  .advantages p {
+  .advantages-main-text {
     font-size: 22px;
     line-height: 26px;
   }
