@@ -38,6 +38,16 @@
     color: #000000;
   }
 
+  .button {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #82B3D3;
+    text-decoration: none;
+  }
+
   .page-header {
     background-color: #ffffff;
     color: #000000
@@ -52,12 +62,7 @@
   }
 
   .navigation-link-button {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    color: #ffffff;
     background-color: #756157;
-    text-transform: uppercase;
   }
 
   .hero {
@@ -103,15 +108,21 @@
     color: #ffffff;
   }
 
-  .advices h2 {
+  .heading-advices {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
   }
 
-  .advices p {
+  .text-advices {
     font-size: 22px;
     line-height: 26px;
+  }
+
+  .advices-item-heading {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .advices-item:nth-child(odd) {
@@ -122,21 +133,18 @@
     background: #FFFFFF;
   }
 
-  .have-an-interest h2 {
+  .heading-interest {
     font-size: 30px;
     line-height: 36px;
   }
 
-  .have-an-interest p {
+  .text-interest {
     font-size: 22px;
     line-height: 26px;
   }
 
-  .have-an-interest .button {
+  .interest-button {
     background-color: #756157;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 700;
     font-size: 20px;
     line-height: 36px;
   }
@@ -149,23 +157,20 @@
     background-color: #000000;
   }
 
-  .mailing h2 {
+  .heading-subscribe {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
   }
 
-  .mailing p {
+  .text-subscribe {
     font-size: 22px;
-    line-height: 2px;
+    line-height: 26px;
   }
 
   .subscribe-button {
     font-size: 20px;
     line-height: 36px;
-    color:#ffffff;
-    background-color: #82B3D3;
-    text-transform: uppercase;
   }
 
   .footer-social-item .button {
@@ -176,6 +181,100 @@
     font-size: 40px;
     line-height: 40px;
     color:#000000;
+    text-decoration: none;
+  }
+
+  .filter-of-catalog {
+    background-image: url("../images/filter.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+
+  .catalog-header {
+    font-size: 60px;
+    line-height: 78px;
+  }
+
+  .breadcrumbs-page {
+    font-size: 16px;
+  }
+
+  .breadcrumbs-link {
+    text-decoration: none;
+  }
+
+  .filter-catalog-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .filter-item-checkbox {
+    line-height: 23px;
+  }
+
+  .filter-item-radio {
+    line-height: 23px;
+  }
+
+  .price-value {
+    color:#000000;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .label {
+    line-height: 24px;
+    color:#000000;
+    opacity: 0.5;
+  }
+
+  .filter-reset {
+    background-color: transparent;
+  }
+
+  .founded-hotels {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .text-link-hotel {
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .product-cost {
+    color: #333333;
+  }
+
+  .product-favorite-button-activated {
+    background-color: #7DB54F;
+  }
+
+  .product-more-button {
+    background-color: #756157;
+    text-decoration: none;
+  }
+
+  .rating {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #F2F2F2;
+  }
+
+  .pagination-button {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .social-link {
     text-decoration: none;
   }
 
