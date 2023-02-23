@@ -1,0 +1,844 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+
+/* ОБЩЕЕ */
+
+  html {
+    height: 100%;
+  }
+
+  img {
+    display: block;
+  }
+
+  .button {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #82B3D3;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  .main-continer {
+    flex-grow: 1;
+  }
+
+  .page-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  /* НАВИГАЦИЯ */
+
+  .navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 332px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 28px;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .navigation-user {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 268px;
+    display: flex;
+    max-width: 270px;
+    margin-left: 285px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navigation-link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .navigation-link-button {
+    display: block;
+    margin: 0;
+    max: 160px;
+    max-height: 36px;
+    background-color: #756157;
+    text-align: center;
+    padding: 8px 34px;
+  }
+
+  .navigation-link-icon {
+    display: block;
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    background-color: #ffffff;
+    color: #000000
+  }
+
+    /* HERO AND ADVANTAGES */
+
+  .hero {
+    color: #ffffff;
+    background-color: #000000;
+    background-image: url(../images/divider-hero.svg), url(../images/hero-background.jpg);
+    background-size: 100% auto;
+    background-position: bottom, top;
+    background-repeat: no-repeat;
+    padding: 52px 0 82px;
+  }
+
+  .hero-words {
+    margin: 0 auto;
+  }
+
+  .advantages-heading {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 69px;
+  }
+
+  .advantages-main-text {
+    font-size: 22px;
+    line-height: 26px;
+    width: 651px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 68px;
+  }
+
+  .advantage-header {
+    margin-top: 102px;
+    margin-bottom: 62px;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    width: 175px;
+    text-align: center;
+  }
+
+  .advantage-text {
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    text-align: center;
+  }
+  .advantages-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+
+  .advantage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 385px;
+    background: rgba(131, 179, 211, 0.2);
+  }
+
+  .advantage-img {
+    margin: 0;
+    width: 800px;
+  }
+
+  .advantage-uncommon-color {
+    background: rgba(131, 179, 211, 0.12);
+  }
+
+  .advantage-item:first-child {
+    background-color: #82B3D3;
+    color: #ffffff;
+    flex-direction: column;
+  }
+
+  .advantage-item:last-child{
+    background-color: #82B3D3;
+    color: #ffffff;
+  }
+
+    /* ADVICES */
+
+  .heading-advices {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    width: 505px;
+    margin: 64px auto 0 auto;
+    text-align: center;
+  }
+
+  .text-advices {
+    font-size: 22px;
+    line-height: 26px;
+    width: 490px;
+    margin: 20px auto 64px auto;
+  }
+
+  .advices-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .advices-item-heading {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
+    width: 230px;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .advices-item-text {
+    width: 230px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .advices-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 385px;
+  }
+
+  .advice-logo {
+    margin: 0;
+    margin-top: 81px;
+  }
+
+  .advices-item:nth-child(odd) {
+    background: rgba(131, 179, 211, 0.12);
+  }
+
+  .advices-item:nth-child(2) {
+    background: #FFFFFF;
+  }
+
+    /* INTEREST AND MAILING */
+
+  .have-an-interest {
+    margin: 96px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 592px;
+  }
+
+  .heading-interest {
+    margin: 0;
+    width: 300px;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .text-interest {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    margin: 20px 0 54px 0;
+  }
+
+  .interest-button {
+    margin: 0;
+    background-color: #756157;
+    font-size: 20px;
+    line-height: 36px;
+    max-width: 376px;
+    border: none;
+    padding: 8px 50px;
+  }
+
+  .mailing {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #ffffff;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 415px;
+  }
+
+  .heading-subscribe {
+    margin: 96px auto 20px auto;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .text-subscribe {
+    margin: 0 auto 53px auto;
+    font-size: 22px;
+    line-height: 26px;
+    width: 475px;
+    text-align: center;
+  }
+
+  .subscribe-form {
+    width: 684px;
+    display: flex;
+  }
+
+  .subscribe-button {
+    font-family: "PT Sans";
+    width: 232px;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0;
+    padding: 8px 50px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .email {
+    width: 452px;
+    margin: 0;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    line-height: 24px;
+    padding: 14px 20px;
+    background-color: #F2F2F2;
+  }
+
+  .mailing-catalog {
+    margin-bottom: 104px;
+    padding: 0;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+    /* FOOTER */
+
+  .footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-social-list {
+    padding: 0;
+    margin: 58px 0 35px 70px;
+    width: 142px;
+    list-style: none;
+    display: flex;
+  }
+
+  .footer-contact-phone {
+    font-size: 40px;
+    line-height: 40px;
+    color:#000000;
+    text-decoration: none;
+    width: 331px;
+    height: 40px;
+    max-height: 40px;
+    margin: 45px 235px 35px 236px;
+  }
+
+  .academy-logo {
+    width: 115px;
+    height: 33px;
+    margin: 48px 70px 37px 0;
+  }
+
+  .social-link {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+
+  .vk {
+    padding: 13px 11px;
+  }
+
+  .telegram {
+    padding: 12px 15px 13px 15px;
+  }
+
+  .youtube {
+    padding: 11.5px 12px;
+  }
+
+
+    /* КРОШКИ */
+
+  .breadcrumbs {
+    width: 114px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .breadcrumbs-page {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .breadcrumbs-link {
+    display: block;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+
+   /* ФИЛЬТР */
+
+   .catalog-filter-form {
+    margin-top: 40px;
+   }
+
+  .filter-of-catalog {
+    background-image: url("../images/filter.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 35px 70px 70px 70px;
+  }
+
+  .catalog-filters {
+    display: flex;
+    justify-content: space-between;
+    width: 1060px;
+    max-height: 157px;
+  }
+
+  .inner-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inner-header-title {
+    font-size: 68px;
+    line-height: 78px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .left-filters {
+    display: flex;
+    width: 371px;
+    justify-content: space-between;
+  }
+
+  .right-filters {
+    display: flex;
+    width: 549px;
+    justify-content: space-between;
+  }
+
+  .filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 191px;
+  }
+
+  .filter-pricing {
+    display: flex;
+    width: 288px;
+    justify-content: space-between;
+  }
+
+  .filter-catalog-group {
+    width: 151px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .filter-list {
+    margin-top: 32px;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  .filter-item:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  .right-filters .filter-catalog-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  .left-filters .filter-catalog-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .filter-item-checkbox {
+    line-height: 23px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .filter-item-radio {
+    line-height: 23px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .price-value {
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 0;
+    color:#000000;
+    line-height: 24px;
+    font-weight: 700;
+    width: 143px;
+    font-size: 18px;
+    font-family: "PT Sans";
+    height: 48px;
+  }
+
+  .min {
+    border-radius: 4px 0 0 4px;
+    border: 0;
+  }
+
+  .max {
+    border-radius: 0 4px 4px 0;
+    border: 0;
+  }
+
+  .label {
+    line-height: 24px;
+    color:#000000;
+    opacity: 0.5;
+  }
+
+  .filter-submit {
+    margin-top: 56px;
+    padding: 9px 50px;
+    border: 0;
+  }
+
+  .filter-reset {
+    background-color: transparent;
+    margin-top: 32px;
+    padding: 9px 50px;
+    border: 0;
+  }
+
+  /* СОРТИРОВКА  */
+
+
+  .catalog-header {
+    font-size: 60px;
+    line-height: 78px;
+    margin-left: 70px;
+    width: 495px;
+  }
+
+  .founded-hotels {
+    width: 338px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .select-sorting {
+    padding: 14px 131px 14px 20px;
+    margin: 0;
+    margin-left: 200px;
+    width: 292px;
+    height: 49px;
+  }
+
+  .text-link-hotel {
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .sorting-container {
+    margin: 50px 70px 0 70px;
+    display: flex;
+    padding: 0;
+    align-items: center;
+  }
+
+  .view-options-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 160px;
+    list-style: none;
+    margin-left: 70px;
+  }
+
+  .view-button {
+    max-width: 48px;
+    max-height: 48px;
+    padding: 15px 14px;
+    margin: 0;
+    background-color: #FFFFFF;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+  }
+
+  .view-option {
+    margin-right: 8px;
+  }
+
+  .view-option:last-child {
+    margin: 0;
+  }
+
+  .view-option:first-child .view-button {
+    border: 2px solid #000000;
+    border-radius: 4px;
+  }
+
+  /* КАТАЛОГ */
+
+  .products {
+    margin: 40px 70px 0 70px;
+  }
+
+  .product-list {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    list-style-type: none;
+    gap: 20px;
+  }
+
+  .product-card {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: 212px 28px 24px 36px 37px;
+    padding: 20px;
+    row-gap: 16px;
+    column-gap: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+  }
+
+  .hotel-image {
+    margin: 0;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .hotel-title {
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
+  .product-type {
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .product-cost {
+    margin: 0;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    text-align: right;
+  }
+
+  .product-more-button {
+    display: block;
+    background-color: #756157;
+    text-decoration: none;
+    padding: 8px 26px;
+    max-width: 140px;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .product-favorite-button {
+    padding: 8px 20px;
+    max-width: 140px;
+    font-size: 16px;
+    font-family: 'PT Sans';
+    border: 0;
+    cursor: pointer;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+
+  .product-favorite-button-activated {
+    background-color: #7DB54F;
+    margin: 0;
+    padding: 8px 18px;
+    max-width: 140px;
+    font-family: 'PT Sans';
+    border: 0;
+  }
+
+  .stars {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+
+  .rating {
+    margin: 0;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    text-align: right;
+    max-width: 140px;
+    max-height: 37px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #F2F2F2;
+    padding: 9px 22px 8px 23px;
+    border-radius: 4px;
+    border: 0;
+  }
+
+  .pagination-list {
+    width: 1060px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin: 80px 0 60px 70px;
+    height: 60px;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .pagination-item:first-child .pagination-button {
+    background-color: #F2F2F2;
+    color: #000000;
+  }
+
+  .three-dots {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  .pagination-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 36px;
+  }
