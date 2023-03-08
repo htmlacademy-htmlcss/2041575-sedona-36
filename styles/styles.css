@@ -224,11 +224,6 @@
 
     /* HERO AND ADVANTAGES */
 
-    .logo {
-      display: block;
-      margin: 0 auto;
-    }
-
   .hero {
     color: #ffffff;
     background-color: #000000;
@@ -240,6 +235,7 @@
   }
 
   .hero-words {
+    display: block;
     margin: 0 auto;
   }
 
@@ -514,6 +510,8 @@
     line-height: 24px;
     padding: 14px 20px;
     background-color: #F2F2F2;
+    font-family: 'PT Sans';
+    font-size: inherit;
   }
 
   .mailing-catalog {
@@ -1127,6 +1125,10 @@
   .pagination-item:first-child .pagination-button {
     background-color: #F2F2F2;
     color: #000000;
+  }
+
+  .pagination-button-current {
+    cursor: auto;
   }
 
   .three-dots {
