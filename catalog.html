@@ -11,20 +11,22 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="page-logo" href="index.html">
-          <img class="page-header-logo" src="images/main-logo.svg" height="70" width="140" alt="Sedona">
-        </a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Гостиницы</a>
-          </li>
-        </ul>
+        <div class="header-logo-list-wrapper">
+          <a class="page-logo" href="index.html">
+            <img class="page-header-logo" src="images/main-logo.svg" height="70" width="140" alt="Sedona">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
         <ul class="navigation-user">
           <li class="navigation-item">
             <ul class="navigation-icons-list">
@@ -70,64 +72,61 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <img src="images/breadscrumbs-arrow.svg" width="8" height="20" alt="arrow-logo">
-              </li>
-              <li class="breadcrumbs-item">
                   <p class="breadcrumbs-page">Гостиницы</p>
               </li>
             </ol>
           </header>
 
-          <form class="catalog-filter-form">
+          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="catalog-filters">
               <div class="left-filters">
                 <fieldset class="filter-catalog-group infrastructure">
                   <legend class="filter-catalog-title">Инфраструктура:</legend>
                   <ul class="filter-list">
                     <li class="filter-item">
-                      <label class="control">
-                        <input class="control-input visually-hidden" type="checkbox" checked>
+                      <label class="control" for="swimmingpool">
+                        <input class="control-input visually-hidden" type="checkbox" checked id="swimmingpool">
                         <span class="control-mark"></span>
                         <span class="control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="filter-item">
-                      <label class="control">
-                        <input class="control-input visually-hidden" type="checkbox" checked>
+                      <label class="control" for="parking">
+                        <input class="control-input visually-hidden" type="checkbox" checked id="parking">
                         <span class="control-mark"></span>
                         <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="filter-item">
-                      <label class="control">
-                        <input class="control-input visually-hidden" type="checkbox">
+                      <label class="control" for="wi-fi">
+                        <input class="control-input visually-hidden" type="checkbox" id="wi-fi">
                         <span class="control-mark"></span>
-                        <span class="control-label">Wi-fi</span>
+                        <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
 
                 <fieldset class="filter-catalog-group house-type">
-                    <legend class="filter-catalog-title">Тип жилья:</legend>
+                    <legend class="filter-catalog-title">Тип Жилья:</legend>
                     <ul class="filter-list">
                         <li class="filter-item">
-                            <label class="control">
-                              <input class="control-input visually-hidden" name="filter-radio" type="radio" value="hotel" checked>
+                            <label class="control" for="Hotel">
+                              <input class="control-input visually-hidden" name="filter-radio" type="radio" value="hotel" checked id="hotel">
                               <span class="control-mark"></span>
                               <span class="control-label">Гостиница</span>
                             </label>
                         </li>
                         <li class="filter-item">
-                            <label class="control">
-                              <input class="control-input visually-hidden" name="filter-radio" type="radio" value="motel">
+                            <label class="control" for="motel">
+                              <input class="control-input visually-hidden" name="filter-radio" type="radio" value="motel" id="motel">
                               <span class="control-mark"></span>
                               <span class="control-label">Мотель</span>
                             </label>
                         </li>
                         <li class="filter-item">
-                            <label class="control">
-                              <input class="control-input visually-hidden" name="filter-radio" type="radio" value="apartments">
+                            <label class="control" for="apartments">
+                              <input class="control-input visually-hidden" name="filter-radio" type="radio" value="apartments" id="apartments">
                               <span class="control-mark"></span>
                               <span class="control-label">Апартаменты</span>
                             </label>
@@ -177,7 +176,7 @@
             <ul class="view-options-list">
               <li class="view-option">
                 <button class="view-button view-button-actived" type="submit">
-                  <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
                     <path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
                   </svg>
                 </button>
@@ -281,7 +280,7 @@
                 <a class="text-link-hotel" href="#">Desert Quail Inn</a>
               </h3>
               <p class="product-type">Гостиница</p>
-              <p class="product-cost">От 2,500 ₽</p>
+              <p class="product-cost">От 2500 ₽</p>
               <a class="button product-more-button" href="#">Подробнее</a>
               <button class="button product-favorite-button" type="button" href="#">В избранное</button>
               <div class="stars">
@@ -312,7 +311,7 @@
                 <a class="text-link-hotel" href="#">GreenTree Inn</a>
               </h3>
               <p class="product-type">Гостиница</p>
-              <p class="product-cost">От 1,500 ₽</p>
+              <p class="product-cost">От 1500 ₽</p>
               <a class="button product-more-button" href="#">Подробнее</a>
               <button class="button product-favorite-button" type="button" href="#">В избранное</button>
               <div class="stars">
@@ -356,11 +355,12 @@
         <section class="mailing-catalog">
           <h2 class="heading-subscribe">Подпишитесь на рассылку</h2>
           <p class="text-subscribe">
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама,<br> честное бойскаутское!
           </p>
           <div class="subscribe-containter">
-            <form class="subscribe-form">
-              <input class="email" type="email" placeholder="Ваш e-mail">
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+              <label for="your-email" class="visually-hidden">Введите email</label>
+              <input class="email" type="email" placeholder="Ваш e-mail" required id="your-email">
               <button class="button subscribe-button" type="submit">Подписаться</button>
             </form>
           </div>
