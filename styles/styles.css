@@ -776,8 +776,9 @@ img {
   flex-wrap: wrap;
   flex-direction: row;
   background-image: url("../images/filter.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-color: #000000;
+  background-repeat: no-repeat;
   color: #FFFFFF;
   margin: 0;
   box-sizing: border-box;
