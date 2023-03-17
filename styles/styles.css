@@ -583,6 +583,7 @@ img {
 
 .footer-social-list {
   padding: 0;
+  margin-top: 25px;
   width: 142px;
   list-style: none;
   display: flex;
@@ -618,21 +619,19 @@ img {
   width: 115px;
   margin-top: 17px;
   min-height: 33px;
-}
-
-.academy-logo-img {
   fill: #000;
 }
 
-.academy-logo-img:hover {
+
+.academy-logo:hover {
   fill: #756157;
 }
 
-.academy-logo-img:focus {
+.academy-logo:focus-visible {
   fill: #756157;
 }
 
-.academy-logo-img:active {
+.academy-logo:active {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -647,13 +646,15 @@ img {
 
 .vk-link {
   padding: 16px 11px 14px 11px;
-}
-
-.vk-icon {
   fill:#83B3D3;
 }
 
-.vk-icon:hover, .vk-icon:focus {
+.vk-link:focus-visible {
+  fill: #68A2CA;
+  outline: none;
+}
+
+.vk-icon:hover {
   fill: #68A2CA;
   outline: none;
 }
@@ -664,13 +665,16 @@ img {
 
 .telegram-link {
   padding: 16px 15px 12px 15px;
-}
-
-.telegram-icon {
   fill:#83B3D3;
 }
 
-.telegram-icon:hover, .telegram-icon:focus {
+.telegram-link:focus-visible  {
+  fill: #68A2CA;
+  outline: none;
+}
+
+
+.telegram-icon:hover  {
   fill: #68A2CA;
   outline: none;
 }
@@ -681,13 +685,15 @@ img {
 
 .youtube-link {
   padding: 17px 12px 11px 13px;
-}
-
-.youtube-icon {
   fill:#83B3D3;
 }
 
-.youtube-icon:hover, .youtube-icon:focus {
+.youtube-link:focus-visible {
+  fill: #68A2CA;
+  outline: none;
+}
+
+.youtube-icon:hover  {
   fill: #68A2CA;
   outline: none;
 }
